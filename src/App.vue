@@ -109,6 +109,7 @@
     <!-- app body/content -->
     <v-content>
       <v-container class="d-flex flex-row">
+        <!-- my intro -->
         <v-card height="500px" width="50%" class="d-flex flex-column ma-2">
           <p class="mt-6 ml-6 display-2">Chetan Gupta</p>
           <blockquote class="blockquote mt-n4">
@@ -124,7 +125,7 @@
             you will absolutly find something interesting, feel free to leave comments
             and feedbacks.
             <br />
-            <v-icon >mdi-emoticon-happy-outline</v-icon>
+            <v-icon>mdi-emoticon-happy-outline</v-icon>
           </p>
 
           <v-spacer />
@@ -141,14 +142,70 @@
           </p>
         </v-card>
 
+        <!-- recommendations -->
         <v-card height="500px" width="50%" class="ma-2">
-          <v-card-title class="headline">Unlimited music now</v-card-title>
+          <v-carousel cycle class="fill-height" hide-delimiter-background show-arrows-on-hover>
+            <v-carousel-item>
+              <v-card class="pa-10 fill-height" color="#0e76a8" dark>
+                <v-card-title>
+                  <v-icon large left>mdi-linkedin</v-icon>
+                  <span class="display-1 font-weight-bold">LinkedIn</span>
+                </v-card-title>
 
-          <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
+                <v-card-text
+                  class="title font-weight-bold"
+                >"Chetan is a very hardworking and responsible guy. He can implement and craft very good and detailed user interfaces. He managed to build a great and always changing android application. He is always learning and growing as a developer. Highly recommend working with him."</v-card-text>
 
-          <v-card-actions>
-            <v-btn text>Listen Now</v-btn>
-          </v-card-actions>
+                <v-card-actions>
+                  <v-list-item class="grow">
+                    <a href="https://www.linkedin.com/in/abdulazizalaa/" target="_blank">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img
+                          class="elevation-6"
+                          src="https://media.licdn.com/dms/image/C5603AQG8BcuwFy2dCg/profile-displayphoto-shrink_100_100/0?e=1581552000&v=beta&t=UJw3osomCGwb_hAGKkzLVCIXE9bQYzQM50-Lm6WQJtI"
+                        />
+                      </v-list-item-avatar>
+                    </a>
+                    <v-list-item-content>
+                      <v-list-item-title>Abdulaziz Mohamed Alaa</v-list-item-title>
+                      <v-list-item-title>Artificial Intelligence Engineer at Mendel.ai</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card-actions>
+              </v-card>
+            </v-carousel-item>
+
+            <v-carousel-item>
+              <v-card class="pa-10 fill-height" color="#0e76a8" dark>
+                <v-card-title>
+                  <v-icon large left>mdi-linkedin</v-icon>
+                  <span class="display-1 font-weight-bold">LinkedIn</span>
+                </v-card-title>
+
+                <v-card-text class="title font-weight-bold">
+                  "Chetan is creative, detail-oriented and very hard-working. It is his passion for the task that drives him to perform to his level best. As a techie, I've known him to be committed to his projects while being a perfectionist at what he does.
+                  I would like to recommend him as I believe that Chetan would be an asset to any team. "
+                </v-card-text>
+
+                <v-card-actions>
+                  <v-list-item class="grow">
+                    <a href="https://www.linkedin.com/in/siddharthsudhakar/" target="_blank">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img
+                          class="elevation-6"
+                          src="https://media.licdn.com/dms/image/C4E03AQHaCyCX_Wmf5Q/profile-displayphoto-shrink_100_100/0?e=1581552000&v=beta&t=CG4FOa_NrPrypvH2N86F19UlSZwX5ujAIWvH3jVJQGo"
+                        />
+                      </v-list-item-avatar>
+                    </a>
+                    <v-list-item-content>
+                      <v-list-item-title>Siddharth Sudhakar</v-list-item-title>
+                      <v-list-item-title>CEO, D2K Innovation Labs India Pvt. Ltd.</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card-actions>
+              </v-card>
+            </v-carousel-item>
+          </v-carousel>
         </v-card>
       </v-container>
     </v-content>
